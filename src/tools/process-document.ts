@@ -12,6 +12,13 @@ import type { ToolDefinition } from './types.js';
 // Schema for process document parameters - accepts both URLs and local file paths
 const processDocumentSchema = z.object({
   url: z.string().describe('URL to a PDF document or local file path'),
+  folder_id: z
+    .string()
+    .nullable()
+    .optional()
+    .describe(
+      'Target folder ID. Use "root" for the root folder, or omit to use the user\'s default folder (configured in settings).',
+    ),
 });
 
 type ProcessDocumentParams = z.infer<typeof processDocumentSchema>;
@@ -31,7 +38,7 @@ async function processDocument(
   params: ProcessDocumentParams,
   mcpClient: PageIndexMcpClient,
 ): Promise<CallToolResult> {
-  const { url: rawUrl } = params;
+  const { url: rawUrl, folder_id } = params;
   const url = rawUrl.trim();
 
   try {
@@ -69,6 +76,7 @@ async function processDocument(
 
     const submitResult = await mcpClient.callTool('submit_document', {
       file_name: uploadInfo.file_name,
+      ...(folder_id !== undefined ? { folder_id } : {}),
     });
 
     if (submitResult.isError) {
