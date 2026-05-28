@@ -19,7 +19,7 @@ export class RemoteToolsProxy {
    * Get client type information
    */
   getClientInfo(): {
-    type: 'dxt' | 'npm';
+    type: 'mcpb' | 'npm';
     version: string;
   } {
     return {

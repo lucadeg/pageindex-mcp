@@ -4,7 +4,6 @@ import { defineConfig } from 'tsup';
 const packageJson = JSON.parse(readFileSync('./package.json', 'utf8'));
 
 const clientTypeMap = {
-  dxt: 'Claude Desktop Extension',
   mcpb: 'Claude Desktop (MCPB)',
   npm: 'PageIndex MCP',
 };

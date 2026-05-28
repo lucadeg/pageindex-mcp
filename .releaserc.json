@@ -13,7 +13,7 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "node scripts/sync-manifest-version.js && pnpm run dxt:pack && pnpm run mcpb:pack && node scripts/update-server-json.js",
+        "prepareCmd": "node scripts/sync-manifest-version.js && pnpm run mcpb:pack && node scripts/update-server-json.js",
         "publishCmd": "npm publish --provenance --access public"
       }
     ],
@@ -33,11 +33,6 @@
       "@semantic-release/github",
       {
         "assets": [
-          {
-            "path": "pageindex-mcp.dxt",
-            "name": "pageindex-mcp-${nextRelease.version}.dxt",
-            "label": "pageindex-mcp-${nextRelease.version}.dxt"
-          },
           {
             "path": "pageindex-mcp.mcpb",
             "name": "pageindex-mcp-${nextRelease.version}.mcpb",

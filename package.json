@@ -16,10 +16,7 @@
     "format": "biome format --write .",
     "clean": "rm -rf build",
     "prepublishOnly": "npm run clean && npm run build",
-    "pack": "npm run dxt:pack && npm run mcpb:pack",
-    "dxt:build": "CLIENT_TYPE=dxt tsup",
-    "dxt:pack": "npm run dxt:build && dxt pack",
-    "dxt:dev": "dxt dev",
+    "pack": "npm run mcpb:pack",
     "mcpb:build": "CLIENT_TYPE=mcpb tsup",
     "mcpb:pack": "npm run mcpb:build && mcpb pack",
     "postinstall": "node -e \"try { require('fs').existsSync('.git') && require('simple-git-hooks')() } catch(e) {}\"",
@@ -47,8 +44,7 @@
     "zod-to-json-schema": "^3.24.6"
   },
   "devDependencies": {
-    "@anthropic-ai/dxt": "^0.2.6",
-    "@anthropic-ai/mcpb": "^1.1.0",
+    "@anthropic-ai/mcpb": "^2.1.2",
     "@biomejs/biome": "^2.2.2",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/exec": "^7.1.0",

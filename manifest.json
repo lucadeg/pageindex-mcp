@@ -1,5 +1,5 @@
 {
-  "dxt_version": "0.1",
+  "manifest_version": "0.4",
   "name": "PageIndex",
   "display_name": "PageIndex",
   "version": "1.7.0",
@@ -8,6 +8,10 @@
   "author": {
     "name": "VectifyAI",
     "url": "https://github.com/VectifyAI"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VectifyAI/pageindex-mcp"
   },
   "homepage": "https://github.com/VectifyAI/pageindex-mcp",
   "documentation": "https://github.com/VectifyAI/pageindex-mcp",

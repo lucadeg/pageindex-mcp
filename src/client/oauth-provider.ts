@@ -189,8 +189,8 @@ export class PageIndexOAuthProvider implements OAuthClientProvider {
             server.close();
             resolve(code);
 
-            // For DXT builds, redirect directly without showing content
-            if (['dxt', 'mcpb'].includes(__CLIENT_TYPE__)) {
+            // For MCPB builds, redirect directly without showing content
+            if (__CLIENT_TYPE__ === 'mcpb') {
               res.writeHead(302, { Location: 'claude://claude.ai/new' });
               res.end();
             } else {
