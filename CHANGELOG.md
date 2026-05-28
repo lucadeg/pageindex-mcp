@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/VectifyAI/pageindex-mcp/compare/v1.7.0...v1.8.0) (2026-05-28)
+
+
+### Features
+
+* drop DXT support, upgrade to mcpb v2 + manifest v0.4 ([d5df3b3](https://github.com/VectifyAI/pageindex-mcp/commit/d5df3b39f2a90322696351ab47b5b9dc16f72563))
+
 # [1.7.0](https://github.com/VectifyAI/pageindex-mcp/compare/v1.6.3...v1.7.0) (2026-05-28)
 
 
