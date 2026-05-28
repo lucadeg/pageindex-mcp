@@ -34,6 +34,9 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Upgrade npm for Trusted Publishing
+        run: npm install -g npm@latest
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
 
@@ -55,5 +58,4 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
