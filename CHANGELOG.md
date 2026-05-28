@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/VectifyAI/pageindex-mcp/compare/v1.6.3...v1.7.0) (2026-05-28)
+
+
+### Features
+
+* **process-document:** forward folder_id to submit_document ([ed90734](https://github.com/VectifyAI/pageindex-mcp/commit/ed90734c1094a133b2ba293f171991307f77fba8))
+
 ## [1.6.3](https://github.com/VectifyAI/pageindex-mcp/compare/v1.6.2...v1.6.3) (2025-10-30)
 
 
