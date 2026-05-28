@@ -31,6 +31,14 @@
   "mcpName": "io.github.VectifyAI/pageindex-mcp",
   "author": "VectifyAI",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VectifyAI/pageindex-mcp.git"
+  },
+  "homepage": "https://github.com/VectifyAI/pageindex-mcp",
+  "bugs": {
+    "url": "https://github.com/VectifyAI/pageindex-mcp/issues"
+  },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.17.3",
     "@types/lodash": "^4.17.20",
