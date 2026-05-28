@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/VectifyAI/pageindex-mcp/compare/v1.8.0...v1.8.1) (2026-05-28)
+
+
+### Bug Fixes
+
+* **package:** add repository, homepage and bugs fields ([843dc76](https://github.com/VectifyAI/pageindex-mcp/commit/843dc765e7f1515f5552dfbbe0429f91d652e560))
+
 # [1.8.0](https://github.com/VectifyAI/pageindex-mcp/compare/v1.7.0...v1.8.0) (2026-05-28)
 
 
